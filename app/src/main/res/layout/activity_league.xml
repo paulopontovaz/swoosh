@@ -16,7 +16,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/desiredleaguebg" />
+        app:srcCompat="@drawable/desiredleaguebg"
+        android:contentDescription="@string/league_background" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -27,7 +28,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:srcCompat="@drawable/swooshlogo" />
+        app:srcCompat="@drawable/swooshlogo"
+        android:contentDescription="@string/swoosh_logo" />
 
     <TextView
         android:id="@+id/textView4"
@@ -35,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:fontFamily="@font/montserrat"
-        android:text="Desired league"
+        android:text="@string/desired_league"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +54,7 @@
         android:layout_marginStart="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
-        android:text="Next"
+        android:text="@string/next"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
@@ -79,11 +81,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
-            android:text="Men's"
+            android:text="@string/men_s"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textOff="Men's"
-            android:textOn="Men's"
+            android:textOff="@string/men_s"
+            android:textOn="@string/men_s"
             android:textSize="18sp" />
 
         <ToggleButton
@@ -93,11 +95,11 @@
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/swoosh_toggle"
-            android:text="Women's"
+            android:text="@string/women_s"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textOff="Women's"
-            android:textOn="Women's"
+            android:textOff="@string/women_s"
+            android:textOn="@string/women_s"
             android:textSize="18sp" />
 
         <ToggleButton
@@ -105,11 +107,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
-            android:text="Co-ed"
+            android:text="@string/co_ed"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textOff="Co-ed"
-            android:textOn="Co-ed"
+            android:textOff="@string/co_ed"
+            android:textOn="@string/co_ed"
             android:textSize="18sp" />
     </LinearLayout>
 
