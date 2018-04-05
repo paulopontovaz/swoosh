@@ -20,4 +20,5 @@
     <string name="skill_screen_baller_text">Baller</string>
     <string name="skill_screen_footer_button_text">FINISH</string>
     <string name="skill_screen_background">Skill Screen Background</string>
+    <string name="finish_screen_title_text">Looking for a co-ed beginner league near you...</string>
 </resources>
