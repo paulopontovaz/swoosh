@@ -2,6 +2,12 @@
     <string name="app_name">Swoosh</string>
     <string name="swoosh_logo">Swoosh Logo</string>
 
+    <string name="welcome_screen_title_1">GO ALL IN</string>
+    <string name="welcome_screen_title_2">ON GOING ALL OUT</string>
+    <string name="welcome_screen_text_1">Find a team in your city and dominate the league!</string>
+    <string name="welcome_screen_footer_button_text">GET STARTED</string>
+    <string name="welcome_screen_background">Welcome Screen Background</string>
+
     <string name="league_screen_title_text">Desired league</string>
     <string name="league_screen_mens_text">Men\'s</string>
     <string name="league_screen_womens_text">Women\'s</string>
@@ -9,16 +15,12 @@
     <string name="league_screen_footer_button_text">NEXT</string>
     <string name="league_screen_background">League Background</string>
 
-    <string name="welcome_screen_title_1">GO ALL IN</string>
-    <string name="welcome_screen_title_2">ON GOING ALL OUT</string>
-    <string name="welcome_screen_text_1">Find a team in your city and dominate the league!</string>
-    <string name="welcome_screen_footer_button_text">GET STARTED</string>
-    <string name="welcome_screen_background">Welcome Screen Background</string>
-
     <string name="skill_screen_title_text">I am a</string>
     <string name="skill_screen_beginner_text">Beginner</string>
     <string name="skill_screen_baller_text">Baller</string>
     <string name="skill_screen_footer_button_text">FINISH</string>
     <string name="skill_screen_background">Skill Screen Background</string>
+
+    <string name="finish_screen_background">Finish Screen Background</string>
     <string name="finish_screen_title_text">Looking for a co-ed beginner league near you...</string>
 </resources>
