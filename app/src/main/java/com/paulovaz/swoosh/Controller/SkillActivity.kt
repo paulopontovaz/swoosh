@@ -5,27 +5,37 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import android.widget.ToggleButton
+import com.paulovaz.swoosh.Model.Player
 import com.paulovaz.swoosh.Utilities.*
 import com.paulovaz.swoosh.R
 import kotlinx.android.synthetic.main.activity_skill.*
 
 class SkillActivity : BaseActivity() {
-    var league: String = ""
-    var selectedSkill: String = ""
+    private lateinit var player: Player
+
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+        outState?.putParcelable(EXTRA_PLAYER, player)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill)
 
-        league = intent.getStringExtra(EXTRA_LEAGUE)
-        println(league)
+        player = intent.getParcelableExtra<Player>(EXTRA_PLAYER)
+        println(player.league)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if (savedInstanceState != null)
+            player = savedInstanceState.getParcelable(EXTRA_PLAYER)
     }
 
     fun onFinishClicked(view: View){
-        if (selectedSkill.isNotEmpty()){
+        if (player.skill.isNotEmpty()){
             val finishActivity = Intent(this, FinishActivity::class.java)
-            finishActivity.putExtra(EXTRA_LEAGUE, league)
-            finishActivity.putExtra(EXTRA_SKILL, selectedSkill)
+            finishActivity.putExtra(EXTRA_PLAYER, player)
             startActivity(finishActivity)
         } else Toast.makeText(this, "Please select a skill level", Toast.LENGTH_SHORT).show()
     }
@@ -41,6 +51,6 @@ class SkillActivity : BaseActivity() {
     }
 
     private fun selectSkill (toggleButtonView: ToggleButton) {
-        selectedSkill = if (toggleButtonView.isChecked) toggleButtonView.text.toString().toLowerCase() else ""
+        player.skill = if (toggleButtonView.isChecked) toggleButtonView.text.toString().toLowerCase() else ""
     }
 }
